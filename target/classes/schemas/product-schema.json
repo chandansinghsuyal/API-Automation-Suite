@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The unique identifier for the product"
+    },
+    "name": {
+      "type": "string",
+      "description": "The product name"
+    },
+    "description": {
+      "type": "string",
+      "description": "The product description"
+    },
+    "price": {
+      "type": "number",
+      "minimum": 0,
+      "description": "The product price"
+    },
+    "stock": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "The available stock quantity"
+    },
+    "category": {
+      "type": "string",
+      "description": "The product category"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The timestamp when the product was created"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The timestamp when the product was last updated"
+    }
+  },
+  "required": ["id", "name", "price", "stock", "category"],
+  "additionalProperties": false
+} 

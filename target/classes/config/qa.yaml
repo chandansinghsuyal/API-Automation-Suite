@@ -1,0 +1,4 @@
+base_url: https://api.qa.example.com/v1
+api_key: qa-api-key-123
+timeout: 5000
+retry_count: 3 
